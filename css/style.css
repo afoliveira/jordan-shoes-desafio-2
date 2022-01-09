@@ -1,0 +1,132 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Discount */
+
+.discount {
+  text-align: center;
+  padding: 1rem 0.975rem;
+  color: #fff;
+  background-color: #181818;
+}
+
+/* Header */
+
+.logo {
+  padding: 0.875rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/banner-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  height: 377px;
+  padding: 0 1.25rem;
+}
+
+.banner h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.125rem;
+  margin-bottom: 1rem;
+}
+
+.banner p {
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../img/banner-desktop.jpg");
+    padding-left: 6.25rem;
+  }
+
+  .banner h1 {
+    font-size: 2.266rem;
+  }
+
+  .banner p {
+    max-width: 460px;
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+}
+
+/* Emphasis */
+
+.emphasis {
+  display: grid;
+  justify-items: center;
+  padding: 3.125rem 1.25rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.emphasis h2 {
+  color: #181818;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.emphasis p {
+  color: #474747;
+  line-height: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 3.75rem;
+}
+
+.shoes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.875rem;
+  width: 100%;
+}
+
+.shoes-box {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  background-color: #ebe9ea;
+  height: 302px;
+}
+
+@media (min-width: 768px) {
+  .emphasis {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+  }
+}
+/* Footer */
+
+.footer {
+  background-color: #181818;
+  padding: 1rem 0;
+  text-align: center;
+  color: #f9f9f9;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
